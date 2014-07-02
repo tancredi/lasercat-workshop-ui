@@ -1,0 +1,48 @@
+debullet()
+    list-style none
+    margin-left 0
+    margin-bottom 0
+    padding-left 0
+
+    li
+        margin-left 0
+
+type-size(size)
+    font-size (size * 10 + 3)px
+    // font-size (size + .3)rem
+
+smooth-font()
+    font-smoothing antialiased
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+page-width()
+    h-padding = 30px
+
+    max-width layout-page-width + h-padding
+    margin auto
+    padding 0 h-padding
+    box-sizing border-box
+
+border-radius(radius = 3px)
+    border-radius radius
+
+no-select()
+    -webkit-user-select: none;
+    -moz-user-select: none;
+
+circle(size=10px, color=color-primary)
+    width size
+    height size
+    border-radius size
+    line-height size
+    text-align center
+    background-color color
+    display inline-block
+
+full-cover()
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%

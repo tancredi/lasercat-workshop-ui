@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Nodebots Workshop </title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+    <div id="view">
+
+        <div class="sidebar">
+
+            <h2>Exercises</h2>
+            <ul>
+                <li
+                    v-repeat='id: exercises'
+                    v-on='click: setExercise(id)'
+                    v-class='active: exercise.id === id'
+                >
+                    {{ id | humanize | upper-first }}
+                </li>
+            </ul>
+
+        </div>
+        <div class="exercise" v-if='exercise'>
+
+            <ul class="nav-tabs row">
+                <li class="col-4 tab-problem" v-class="active: tab === 'problem'" v-on="click: tab = 'problem'">Problem</li>
+                <li class="col-4 tab-script" v-class="active: tab === 'script'" v-on="click: tab = 'script'">Script</li>
+                <li class="col-4 tab-solution" v-class="active: tab === 'solution'" v-on="click: tab = 'solution'">Solution</li>
+            </ul>
+
+            <div class="problem" v-if="tab === 'problem'">
+                <h1 class="ruled">{{ exercise.id | humanize | upper-first }}</h1>
+                {{{ exercise.problem | markdown }}}
+            </div>
+
+            <div class="script">
+                <p v-if="!exercise.script" class="placeholder">
+                    You haven't started this exercise yet
+                </p>
+
+                <button v-on="click: edit">Edit</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+html
+    font-size 62.5%
+
+body
+    color #666
+    font-family type-base-face
+    type-size(1.6)
+    smooth-font()
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, hr
+    margin-top 0
+    margin-bottom 20px
+    smooth-font()
+
+    &:last-child, &.no-space
+        margin-bottom 0
+
+h1, h2, h3, h4, h5, h6
+
+    &.ruled
+        padding-bottom 10px
+        border-bottom 1px solid rgba(#000, .1)
+
+h1
+    type-size(4)
+
+h2
+    type-size(3)
+
+h3
+    type-size(2.5)
+
+h4
+    type-size(2)
+
+h5
+    type-size(1.5)
+
+h6
+    type-size(1.3)
+
+h1, h2
+    color #333
+    font-family type-special-face
+    font-weight 200
+
+h1, h2
+
+    &:not(:first-child)
+        margin-top 20px
+
+    &.ruled
+        padding-bottom 20px
+a
+    color darken(color-green, 30%)
+    text-decoration none
+    cursor pointer
+
+    &:hover
+        color darken(color-orange, 40%)
+
+hr
+    border 0
+    background rgba(#000, .1)
+    height 1px
+
+ul
+    list-style square
+
+ul, ol
+    padding-left 20px
+
+.center
+    text-align center
+
+.hide
+    display none
+
+.empty
+    font-style italic
+    color color-grey
+
+code
+    font-family type-mono-face
