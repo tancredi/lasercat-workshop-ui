@@ -1,5 +1,5 @@
 body
-    background #eee
+    background bg-color
     margin 0
 
 header
@@ -43,6 +43,7 @@ header
     position fixed
     left 0
     top 0
+    z-index 99
 
     h2
         margin 10px 30px
@@ -66,6 +67,9 @@ header
 
 tab-color(color)
     background color
+
+    &:hover:not(.active)
+        background lighten(color, 10%)
 
 .nav-tabs
     position fixed
@@ -93,7 +97,7 @@ tab-color(color)
             tab-color(color-red)
 
         &.active
-            background transparent
+            background bg-color
             color color-black
             font-weight normal
 

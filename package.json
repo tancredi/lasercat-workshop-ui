@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "start": "nw index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "gulp watch",
     "build": "gulp build"
@@ -13,12 +14,15 @@
   "window": {
     "width": 1200,
     "height": 700,
-    "debug": true,
-    "toolbar": false
+    "debug": true
   },
   "dependencies": {
+    "async": "^0.2.10",
+    "lasercat-workshop": "^1.1.0",
     "marked": "^0.3.2",
     "open": "0.0.5",
+    "q": "^1.0.1",
+    "slug": "^0.5.0",
     "string": "^1.9.0",
     "touch": "0.0.3",
     "vue": "^0.10.5"

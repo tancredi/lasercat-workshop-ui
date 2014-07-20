@@ -13,11 +13,11 @@
             <h2>Exercises</h2>
             <ul>
                 <li
-                    v-repeat='id: exercises'
-                    v-on='click: setExercise(id)'
-                    v-class='active: exercise.id === id'
+                    v-repeat='cur: exercises'
+                    v-on='click: setExercise(cur)'
+                    v-class='active: cur === exercise'
                 >
-                    {{ id | humanize | upper-first }}
+                    {{ cur.name }}
                 </li>
             </ul>
 
@@ -31,7 +31,7 @@
             </ul>
 
             <div class="problem" v-if="tab === 'problem'">
-                <h1 class="ruled">{{ exercise.id | humanize | upper-first }}</h1>
+                <h1 class="ruled">{{ exercise.name }}</h1>
                 {{{ exercise.problem | markdown }}}
             </div>
 
