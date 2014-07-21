@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "async": "^0.2.10",
+    "ensureDir": "^1.0.6",
     "johnny-five": "^0.8.1",
     "lasercat-workshop": "^1.1.0",
     "marked": "^0.3.2",
