@@ -18,14 +18,17 @@
   },
   "dependencies": {
     "async": "^0.2.10",
+    "johnny-five": "^0.8.1",
     "lasercat-workshop": "^1.1.0",
     "marked": "^0.3.2",
     "open": "0.0.5",
     "q": "^1.0.1",
     "slug": "^0.5.0",
     "string": "^1.9.0",
+    "termio": "0.0.3",
     "touch": "0.0.3",
-    "vue": "^0.10.5"
+    "vue": "^0.10.5",
+    "watchr": "^2.4.11"
   },
   "devDependencies": {
     "cli-color": "^0.3.2",

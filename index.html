@@ -30,17 +30,26 @@
                 <li class="col-4 tab-solution" v-class="active: tab === 'solution'" v-on="click: tab = 'solution'">Solution</li>
             </ul>
 
-            <div class="problem" v-if="tab === 'problem'">
+            <div class="pane-problem" v-if="tab === 'problem'">
                 <h1 class="ruled">{{ exercise.name }}</h1>
                 {{{ exercise.problem | markdown }}}
             </div>
 
-            <div class="script">
+            <div class="pane-script" v-if="tab === 'script'">
                 <p v-if="!exercise.script" class="placeholder">
                     You haven't started this exercise yet
                 </p>
 
-                <button v-on="click: edit">Edit</button>
+                <div class="clearfix">
+                    <button class="left" v-on="click: edit">Edit</button>
+                    <button class="info right" v-on="click: verify" v-class="disabled: loading">Verify</button>
+                </div>
+
+                <pre v-if="verification.output"><code>{{{ verification.output }}}</code></pre>
+            </div>
+
+            <div class="pane-solution" v-if="tab === 'solution'">
+                <pre><code>{{ exercise.solution }}</code></pre>
             </div>
 
         </div>

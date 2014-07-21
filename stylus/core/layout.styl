@@ -30,6 +30,9 @@ header
 .right
     float right
 
+.clearfix
+    clearfix()
+
 #view, #view > .row
     height 100%
 
@@ -107,19 +110,12 @@ tab-color(color)
     padding-top nav-height + 20px
     position relative
 
-    .problem
+    .pane-problem
         type-size 1.3
         font-weight bold
         float none
 
-        pre
-            background color-black
-            padding 10px
-            border-radius()
-            color color-purple
-            type-size 1
-
-    .script
+    .pane-script
 
         .empty
             font-style italic
