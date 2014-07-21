@@ -1,4 +1,4 @@
- ## Lasercat Workshop UI
+# Lasercat Workshop UI
 
 > Node-webkit based UI for [lasercat-workshop](https://github.com/tableflip/lasercat-workshop).
 
