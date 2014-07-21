@@ -1,6 +1,6 @@
 # Lasercat Workshop UI
 
-![http://oi58.tinypic.com/2a5n78o.jpg](Screenshot)
+![Screenshot](http://oi58.tinypic.com/2a5n78o.jpg)
 
 > Node-webkit based UI for [lasercat-workshop](https://github.com/tableflip/lasercat-workshop).
 
