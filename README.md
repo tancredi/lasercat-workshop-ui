@@ -1,10 +1,10 @@
-# Lasercat Workshop UI
+## Lasercat Workshop UI
 
 ![Screenshot](http://oi58.tinypic.com/2a5n78o.jpg)
 
 > Node-webkit based UI for [lasercat-workshop](https://github.com/tableflip/lasercat-workshop).
 
-* Note *: This is a work in progress, other than a massive hack, So keep calm & P.R.
+**Note**: This is a work in progress, other than a massive hack, So keep calm & P.R.
 
 ## Setup
 
